@@ -1,0 +1,23 @@
+<div style="cursor: pointer" [routerLink]="[index]">
+  <div class="card mb-3" routerLinkActive="text-bg-primary">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          [src]="recipe.imagePath"
+          class="img-fluid rounded-start"
+          alt=""
+          style="max-width: auto; max-height: auto; width: 100%; height: 100%"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ recipe.name }}</h5>
+          <p class="card-text">{{ recipe.description }}</p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
